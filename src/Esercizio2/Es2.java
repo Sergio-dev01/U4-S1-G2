@@ -10,7 +10,7 @@ public class Es2 {
         System.out.println("Inserisci un numero intero tra 0 e 3: ");
         int num = scanner.nextInt();
 
-        switch (num) {
+      /*  switch (num) {
             case 0:
                 System.out.println("Zero");
                 break;
@@ -26,6 +26,16 @@ public class Es2 {
             default:
                 System.out.println("Errore: Numero non compreso");
 
+        }
+
+       */
+
+        switch (num) {
+            case 0 -> System.out.println("Zero");
+            case 1 -> System.out.println("Uno");
+            case 2 -> System.out.println("Due");
+            case 3 -> System.out.println("Tre");
+            default -> System.out.println("Errore: Numero non compreso");
         }
 
         scanner.close();
